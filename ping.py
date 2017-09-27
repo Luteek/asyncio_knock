@@ -3,6 +3,7 @@ import re
 
 
 def ping_d(ip, parameters):
+	
     line = ('ping' + ' ' + ip + ' ' + parameters)
     cmd = Popen(line.split(' '), stdout=PIPE)
     output = cmd.communicate()[0]
